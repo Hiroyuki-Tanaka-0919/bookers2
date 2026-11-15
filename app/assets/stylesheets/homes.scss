@@ -1,0 +1,36 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.btn-wrapper.col-10.mx-auto.test001{
+    list-style:none;
+}
+
+.btn-wrapper.col-10.mx-auto.test001 .row.blue{
+    color:white;
+    margin-bottom:50px;
+    a:link { color: #ffffff; }
+    a:visited { color: #ffffff; }
+    a:hover { color: #ffffff; }
+    a:active { color: #ffffff; }
+}
+
+.btn-wrapper.col-10.mx-auto.test001 .row.green{
+    color:white;
+    a:link { color: #ffffff; }
+    a:visited { color: #ffffff; }
+    a:hover { color: #ffffff; }
+    a:active { color: #ffffff; }
+}
+
+.btn-wrapper.col-10.mx-auto.test001 .row.green li a{
+    background:blue;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.btn-wrapper.col-10.mx-auto.test001 .row.blue li a{
+    background:green;
+    font-size: 30px;
+    padding: 10px;
+}
