@@ -1,24 +1,22 @@
-# README
+# bookers2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Rebuild
+```
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+$ echo 'export PATH="~/.rbenv/bin:$PATH"' >> ~/.bashrc
+$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+$ exit
 
-Things you may want to cover:
+$ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+$ exit
 
-* Ruby version
+$ rbenv install 2.6.3
+$ rbenv global 2.6.3
+$ rbenv rehash
+$ ruby -v
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ cd ~/prog/rails/bookers2
+$ bundle install
+$ bin/rails db:migrate
+$ bin/rails s
+```
